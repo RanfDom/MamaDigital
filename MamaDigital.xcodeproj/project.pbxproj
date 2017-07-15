@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		358075131F19EBC000AA8C0F /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580750B1F19EBC000AA8C0F /* DescriptionViewCell.swift */; };
+		358075141F19EBC000AA8C0F /* EquipmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580750D1F19EBC000AA8C0F /* EquipmentCollectionCell.swift */; };
+		358075151F19EBC000AA8C0F /* EquipmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580750E1F19EBC000AA8C0F /* EquipmentViewCell.swift */; };
+		358075161F19EBC000AA8C0F /* HeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358075101F19EBC000AA8C0F /* HeaderTableView.swift */; };
+		358075171F19EBC000AA8C0F /* HeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 358075111F19EBC000AA8C0F /* HeaderTableView.xib */; };
+		358075181F19EBC000AA8C0F /* RoutineDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358075121F19EBC000AA8C0F /* RoutineDetailVC.swift */; };
+		3580751B1F1A76C800AA8C0F /* StepsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3580751A1F1A76C800AA8C0F /* StepsViewCell.swift */; };
 		E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B711F13FAD500918677 /* AppDelegate.swift */; };
 		E7444B741F13FAD500918677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B731F13FAD500918677 /* ViewController.swift */; };
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
@@ -15,6 +22,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3580750B1F19EBC000AA8C0F /* DescriptionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
+		3580750D1F19EBC000AA8C0F /* EquipmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentCollectionCell.swift; sourceTree = "<group>"; };
+		3580750E1F19EBC000AA8C0F /* EquipmentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewCell.swift; sourceTree = "<group>"; };
+		358075101F19EBC000AA8C0F /* HeaderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableView.swift; sourceTree = "<group>"; };
+		358075111F19EBC000AA8C0F /* HeaderTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTableView.xib; sourceTree = "<group>"; };
+		358075121F19EBC000AA8C0F /* RoutineDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDetailVC.swift; sourceTree = "<group>"; };
+		3580751A1F1A76C800AA8C0F /* StepsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewCell.swift; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7444B711F13FAD500918677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7444B731F13FAD500918677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +49,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		358075091F19EBC000AA8C0F /* RoutineDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				358075191F1A76B800AA8C0F /* StepsViewCell */,
+				3580750A1F19EBC000AA8C0F /* DescriptionViewCell */,
+				3580750C1F19EBC000AA8C0F /* EquipmentViewCell */,
+				3580750F1F19EBC000AA8C0F /* HeaderView */,
+				358075121F19EBC000AA8C0F /* RoutineDetailVC.swift */,
+			);
+			path = RoutineDetailVC;
+			sourceTree = "<group>";
+		};
+		3580750A1F19EBC000AA8C0F /* DescriptionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3580750B1F19EBC000AA8C0F /* DescriptionViewCell.swift */,
+			);
+			path = DescriptionViewCell;
+			sourceTree = "<group>";
+		};
+		3580750C1F19EBC000AA8C0F /* EquipmentViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3580750D1F19EBC000AA8C0F /* EquipmentCollectionCell.swift */,
+				3580750E1F19EBC000AA8C0F /* EquipmentViewCell.swift */,
+			);
+			path = EquipmentViewCell;
+			sourceTree = "<group>";
+		};
+		3580750F1F19EBC000AA8C0F /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				358075101F19EBC000AA8C0F /* HeaderTableView.swift */,
+				358075111F19EBC000AA8C0F /* HeaderTableView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		358075191F1A76B800AA8C0F /* StepsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3580751A1F1A76C800AA8C0F /* StepsViewCell.swift */,
+			);
+			path = StepsViewCell;
+			sourceTree = "<group>";
+		};
 		E7444B651F13FAD500918677 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +114,7 @@
 		E7444B701F13FAD500918677 /* MamaDigital */ = {
 			isa = PBXGroup;
 			children = (
+				358075091F19EBC000AA8C0F /* RoutineDetailVC */,
 				E7444B711F13FAD500918677 /* AppDelegate.swift */,
 				E7444B731F13FAD500918677 /* ViewController.swift */,
 				E7444B751F13FAD500918677 /* Main.storyboard */,
@@ -96,7 +157,7 @@
 				TargetAttributes = {
 					E7444B6D1F13FAD500918677 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = X8ZUHQ7Z95;
+						DevelopmentTeam = 5VBZPT5YPP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +185,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358075171F19EBC000AA8C0F /* HeaderTableView.xib in Resources */,
 				E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */,
 				E7444B791F13FAD500918677 /* Assets.xcassets in Resources */,
 				E7444B771F13FAD500918677 /* Main.storyboard in Resources */,
@@ -137,8 +199,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3580751B1F1A76C800AA8C0F /* StepsViewCell.swift in Sources */,
+				358075141F19EBC000AA8C0F /* EquipmentCollectionCell.swift in Sources */,
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
+				358075131F19EBC000AA8C0F /* DescriptionViewCell.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
+				358075181F19EBC000AA8C0F /* RoutineDetailVC.swift in Sources */,
+				358075161F19EBC000AA8C0F /* HeaderTableView.swift in Sources */,
+				358075151F19EBC000AA8C0F /* EquipmentViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,10 +329,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X8ZUHQ7Z95;
+				DEVELOPMENT_TEAM = 5VBZPT5YPP;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ranfeslab.MamaDigital;
+				PRODUCT_BUNDLE_IDENTIFIER = ds.MamaDigital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -274,10 +342,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = X8ZUHQ7Z95;
+				DEVELOPMENT_TEAM = 5VBZPT5YPP;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ranfeslab.MamaDigital;
+				PRODUCT_BUNDLE_IDENTIFIER = ds.MamaDigital;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -302,6 +370,7 @@
 				E7444B821F13FAD500918677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
