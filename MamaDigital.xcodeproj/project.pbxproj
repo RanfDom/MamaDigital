@@ -13,6 +13,7 @@
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
 		E7444B791F13FAD500918677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7444B781F13FAD500918677 /* Assets.xcassets */; };
 		E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B7A1F13FAD500918677 /* LaunchScreen.storyboard */; };
+		E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseFeedVC.swift; sourceTree = "<group>"; };
 		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 		E7444B701F13FAD500918677 /* MamaDigital */ = {
 			isa = PBXGroup;
 			children = (
+				E7AC197F1F2333580094DCBA /* ExcerciseFeed */,
 				E7444B711F13FAD500918677 /* AppDelegate.swift */,
 				E7444B731F13FAD500918677 /* ViewController.swift */,
 				E7444B751F13FAD500918677 /* Main.storyboard */,
@@ -86,6 +89,14 @@
 				E7444B7D1F13FAD500918677 /* Info.plist */,
 			);
 			path = MamaDigital;
+			sourceTree = "<group>";
+		};
+		E7AC197F1F2333580094DCBA /* ExcerciseFeed */ = {
+			isa = PBXGroup;
+			children = (
+				E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */,
+			);
+			path = ExcerciseFeed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
+				E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,7 +353,7 @@
 				DEVELOPMENT_TEAM = T9APG36RLZ;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ranfeslab.MamaDigital;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lovelynk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -357,7 +369,7 @@
 				DEVELOPMENT_TEAM = T9APG36RLZ;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ranfeslab.MamaDigital;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lovelynk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;

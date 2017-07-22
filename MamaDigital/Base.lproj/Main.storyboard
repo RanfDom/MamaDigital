@@ -26,26 +26,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pb7-ia-LZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734" y="929"/>
+            <point key="canvasLocation" x="684" y="729"/>
         </scene>
-        <!--Item 1-->
-        <scene sceneID="8mY-7j-x1n">
+        <!--Item-->
+        <scene sceneID="n7f-Aw-GLt">
             <objects>
-                <viewController id="BcQ-20-xaZ" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="6QF-Ax-eb3"/>
-                        <viewControllerLayoutGuide type="bottom" id="Gtc-t6-CDz"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Pk3-BF-zWg">
+                <tableViewController id="u3w-Ew-vDX" customClass="ExcerciseFeedVC" customModule="MamaDigital" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qkn-4D-viD">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="0.0099468241871529806" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="O51-gW-1Zn"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A8P-n5-sRa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Czh-1A-Upn">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Czh-1A-Upn" id="KUe-wf-3hM">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="u3w-Ew-vDX" id="bPB-u4-wtI"/>
+                            <outlet property="delegate" destination="u3w-Ew-vDX" id="LFf-7J-ePt"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Item" id="884-Tu-1Gb"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hsr-bA-GDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="126"/>
+            <point key="canvasLocation" x="684" y="27"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d1C-wA-1kj">
@@ -57,7 +67,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="BcQ-20-xaZ" kind="relationship" relationship="viewControllers" id="Wyh-rd-4bW"/>
+                        <segue destination="u3w-Ew-vDX" kind="relationship" relationship="viewControllers" id="gaa-hM-dF5"/>
                         <segue destination="zBr-gP-xwq" kind="relationship" relationship="viewControllers" id="cUV-mA-taR"/>
                     </connections>
                 </tabBarController>
