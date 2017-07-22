@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6ED2DAB8A035C46DA3A61A3A /* Pods_MamaDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */; };
 		E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B711F13FAD500918677 /* AppDelegate.swift */; };
 		E7444B741F13FAD500918677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B731F13FAD500918677 /* ViewController.swift */; };
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
+		905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.debug.xcconfig"; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7444B711F13FAD500918677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7444B731F13FAD500918677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED2DAB8A035C46DA3A61A3A /* Pods_MamaDigital.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F9BB0B9C3020CD1B013B7D7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7B612E5AF04A244DE9FF1059 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */,
+				1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E7444B651F13FAD500918677 = {
 			isa = PBXGroup;
 			children = (
 				E7444B701F13FAD500918677 /* MamaDigital */,
 				E7444B6F1F13FAD500918677 /* Products */,
+				7B612E5AF04A244DE9FF1059 /* Pods */,
+				0F9BB0B9C3020CD1B013B7D7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E7444B801F13FAD500918677 /* Build configuration list for PBXNativeTarget "MamaDigital" */;
 			buildPhases = (
+				B0B2AEB8E811FEE67F21778C /* [CP] Check Pods Manifest.lock */,
 				E7444B6A1F13FAD500918677 /* Sources */,
 				E7444B6B1F13FAD500918677 /* Frameworks */,
 				E7444B6C1F13FAD500918677 /* Resources */,
+				6D8FAE61C69DCD9E0C15FE27 /* [CP] Embed Pods Frameworks */,
+				3E9EDA37EE02D85E4D71FD1E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3E9EDA37EE02D85E4D71FD1E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8FAE61C69DCD9E0C15FE27 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B2AEB8E811FEE67F21778C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E7444B6A1F13FAD500918677 /* Sources */ = {
@@ -259,6 +334,7 @@
 		};
 		E7444B811F13FAD500918677 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8ZUHQ7Z95;
@@ -272,6 +348,7 @@
 		};
 		E7444B821F13FAD500918677 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X8ZUHQ7Z95;
