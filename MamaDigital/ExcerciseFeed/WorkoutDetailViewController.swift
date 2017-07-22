@@ -1,5 +1,5 @@
 //
-//  ExcerciseFeed.swift
+//  WorkoutDetailViewController.swift
 //  MamaDigital
 //
 //  Created by Ranferi Dominguez on 7/22/17.
@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-class ExcerciseFeedView : UIView{
+class WorkoutDetailViewController: UIViewController {
     
-    var dataView = [""]
+    var workout : Workout?
     
 }

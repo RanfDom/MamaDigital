@@ -10,9 +10,9 @@ import UIKit
 import Foundation
 
 class WorkoutFeedCell: UITableViewCell {
- 
+    @IBOutlet weak var title: UILabel!
     @IBOutlet weak var backGroundImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
+
     
     
 }
