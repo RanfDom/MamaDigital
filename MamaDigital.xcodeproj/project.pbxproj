@@ -13,7 +13,10 @@
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
 		E7444B791F13FAD500918677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7444B781F13FAD500918677 /* Assets.xcassets */; };
 		E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B7A1F13FAD500918677 /* LaunchScreen.storyboard */; };
-		E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */; };
+		E7AC19811F23336A0094DCBA /* ExcerciseFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* ExcerciseFeedView.swift */; };
+		E7AC19831F23DBCC0094DCBA /* WorkoutFeedView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC19821F23DBCC0094DCBA /* WorkoutFeedView.xib */; };
+		E7AC19851F23DEDE0094DCBA /* WorkoutFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7AC19841F23DEDE0094DCBA /* WorkoutFeedCell.xib */; };
+		E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +29,10 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseFeedVC.swift; sourceTree = "<group>"; };
+		E7AC19801F23336A0094DCBA /* ExcerciseFeedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseFeedView.swift; sourceTree = "<group>"; };
+		E7AC19821F23DBCC0094DCBA /* WorkoutFeedView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutFeedView.xib; sourceTree = "<group>"; };
+		E7AC19841F23DEDE0094DCBA /* WorkoutFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WorkoutFeedCell.xib; sourceTree = "<group>"; };
+		E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedCell.swift; sourceTree = "<group>"; };
 		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,7 +100,10 @@
 		E7AC197F1F2333580094DCBA /* ExcerciseFeed */ = {
 			isa = PBXGroup;
 			children = (
-				E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */,
+				E7AC19801F23336A0094DCBA /* ExcerciseFeedView.swift */,
+				E7AC19821F23DBCC0094DCBA /* WorkoutFeedView.xib */,
+				E7AC19841F23DEDE0094DCBA /* WorkoutFeedCell.xib */,
+				E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */,
 			);
 			path = ExcerciseFeed;
 			sourceTree = "<group>";
@@ -163,7 +172,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */,
+				E7AC19851F23DEDE0094DCBA /* WorkoutFeedCell.xib in Resources */,
 				E7444B791F13FAD500918677 /* Assets.xcassets in Resources */,
+				E7AC19831F23DBCC0094DCBA /* WorkoutFeedView.xib in Resources */,
 				E7444B771F13FAD500918677 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
-				E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */,
+				E7AC19811F23336A0094DCBA /* ExcerciseFeedView.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
+				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

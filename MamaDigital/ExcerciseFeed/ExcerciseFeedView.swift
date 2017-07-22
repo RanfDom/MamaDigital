@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
-class ExcerciseFeedVC : UITableViewController{
+class ExcerciseFeedView : UIView{
+    
+    var dataView = [""]
     
 }
