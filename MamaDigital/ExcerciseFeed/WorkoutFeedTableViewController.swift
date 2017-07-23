@@ -16,7 +16,6 @@ class WorkoutFeedTableViewController : UITableViewController{
     
     override func viewDidLoad() {
         if dataView.count == 0 {
-            testApp()
             self.tableView.reloadData()
         }
     }
@@ -31,9 +30,6 @@ class WorkoutFeedTableViewController : UITableViewController{
         }
     }
     
-    func testApp() {
-        dataView = [Workout(title: "First Workout", slug: "Test Slug", video_URL: "someURL", img_URL: "https://www.guiainfantil.com/uploads/bebes/mamahablabebe-p.jpg", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi placerat velit nisl, non viverra sapien aliquam ut. Sed varius nisi quis justo ullamcorper, eget fermentum turpis ornare. Morbi ornare luctus nisi, non consectetur metus lacinia rhoncus. Nulla at consectetur ligula, consequat vulputate sapien. Quisque hendrerit nisi in magna maximus faucibus. Nam aliquam, mi sed gravida dictum, dolor tortor vulputate mauris, vel suscipit massa orci et tortor. Nulla vitae tellus consequat, laoreet ex non, vulputate eros. In pharetra orci quam, aliquam sodales nulla bibendum ac. Pellentesque semper lorem eget cursus condimentum.", duration: "150", type: "Motor")]
-    }
 }
 
 extension WorkoutFeedTableViewController {//Data Source

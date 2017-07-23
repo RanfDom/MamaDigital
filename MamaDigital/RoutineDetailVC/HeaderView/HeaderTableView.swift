@@ -8,12 +8,18 @@
 
 import UIKit
 
+protocol HeaderViewProtocol {
+    func playVideo()
+}
+
 class HeaderTableView: UIView {
 
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var backImage: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var downloadButton: UIButton!
+    
+    var delegate : HeaderViewProtocol?
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,6 +47,7 @@ class HeaderTableView: UIView {
     
     // MARK: -Button functions
     @IBAction func downloadAction(_ sender: UIButton) {
+        delegate?.playVideo()
         print("Super cara feliz :D")
     }
 }
