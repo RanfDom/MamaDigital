@@ -56,12 +56,12 @@ extension WorkoutFeedTableViewController {//Data Source
 extension WorkoutFeedTableViewController {//Table Delegate
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let sb = UIStoryboard(name: "Main", bundle: nil)
-//        let workoutDetailVC = sb.instantiateViewController(withIdentifier: "workoutDetailIdentifier") as! WorkoutDetailViewController
-//        
-//        workoutDetailVC.workout = dataView[indexPath.row]
-//        
-//        self.present(workoutDetailVC, animated: true, completion: nil)
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let workoutDetailVC = sb.instantiateViewController(withIdentifier: "RoutineDetailVC") as! RoutineDetailVC
+        
+        workoutDetailVC.workout = dataView[indexPath.row]
+        
+        self.navigationController?.pushViewController(workoutDetailVC, animated: true)
     }
     
 }

@@ -35,6 +35,9 @@ class HeaderTableView: UIView {
         downloadButton.layer.cornerRadius = downloadButton.frame.width/2
     }
     
+    func setImage(urlImage: String) {
+        backImage.sd_setImage(with: URL(string: urlImage))
+    }
     
     // MARK: -Button functions
     @IBAction func downloadAction(_ sender: UIButton) {

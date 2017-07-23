@@ -11,16 +11,14 @@ import UIKit
 class RoutineDetailVC: UITableViewController {
 
     var stepsArray = ["step1","step2","step3"]
+    var workout:Workout!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let titleController = UILabel()
-        titleController.text = "Practica diaria"
-        titleController.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: 30)
-        titleController.textAlignment = .center
-        titleController.textColor = UIColor.init(red: 95/255, green: 94/255, blue: 95/255, alpha: 1)
-        titleController.font = UIFont(name: "Futura-Bold", size: 18)
+        let titleController = UIImageView()
+        titleController.image = #imageLiteral(resourceName: "logo")
+        titleController.frame = CGRect(x: 0, y: 0, width: 110, height: 25)
         
         self.navigationItem.titleView = titleController
     }
@@ -30,7 +28,7 @@ class RoutineDetailVC: UITableViewController {
 extension RoutineDetailVC{
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 2// 3
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -51,6 +49,7 @@ extension RoutineDetailVC{
             
             if indexPath.row == 0 {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionViewCellID", for: indexPath) as! DescriptionViewCell
+                cell.descTextView.text = workout?.description
                 return cell
             }else{
                 let cell = tableView.dequeueReusableCell(withIdentifier: "EquipmentViewCellID", for: indexPath) as! EquipmentViewCell
@@ -89,6 +88,7 @@ extension RoutineDetailVC{
         
         if section == 0{
             let headerView = HeaderTableView()
+            headerView.setImage(urlImage: (workout?.img_URL)!)
             return headerView
         }else if section == 1{
             headerDesLabel.text = ""
