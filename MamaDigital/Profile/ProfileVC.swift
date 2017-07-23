@@ -22,6 +22,8 @@ class ProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        getData()
+        
         initialConfigView()
     }
     
@@ -38,4 +40,25 @@ class ProfileVC: UIViewController {
         babyButton.clipsToBounds = true
     }
 
+    func setUserInfo() {
+        userNameLabel.text = user.name
+        babyNameLabel.text = baby.name
+    }
+    
+    func getData() {
+        
+        API_Service.requestBabyInfo(onSuccess: { (baby) in
+            self.baby = baby
+            self.setUserInfo()
+        }) { (error) in
+            print(error ?? 0)
+        }
+    }
+    
+    @IBAction func goToBabyProfile(_ sender: UIButton) {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let babyVC = sb.instantiateViewController(withIdentifier: "BabyProfileVC") as! BabyProfileVC
+        babyVC.babyData = baby
+        self.present(babyVC, animated: true, completion: nil)
+    }
 }
