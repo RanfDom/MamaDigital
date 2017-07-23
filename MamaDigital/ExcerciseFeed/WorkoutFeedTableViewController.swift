@@ -19,6 +19,16 @@ class WorkoutFeedTableViewController : UITableViewController{
             self.tableView.reloadData()
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+//        API_Service.requestDailyWorkout(onSuccess: { (dailyWorkout) in
+//            self.dataView = dailyWorkout
+//            print(self.dataView)
+//            self.tableView.reloadData()
+//        }) { (error) in
+//            print(error ?? 0)
+//        }
+    }
 
     
     func testApp() {

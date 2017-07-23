@@ -17,15 +17,17 @@
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
 		E7444B791F13FAD500918677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7444B781F13FAD500918677 /* Assets.xcassets */; };
 		E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B7A1F13FAD500918677 /* LaunchScreen.storyboard */; };
+		E764FF171F24449300C42DC8 /* API_Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764FF161F24449300C42DC8 /* API_Service.swift */; };
+		E764FF1A1F245EDA00C42DC8 /* Adapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764FF191F245EDA00C42DC8 /* Adapter.swift */; };
 		E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */; };
 		E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
-		352D8E881F2441B6002AAF61 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		3536A4881F2469530080A4F7 /* BabyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyProfileVC.swift; sourceTree = "<group>"; };
 		35BB60291F2451BF00824B2B /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
+		352D8E881F2441B6002AAF61 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.debug.xcconfig"; sourceTree = "<group>"; };
 		E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -35,6 +37,8 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E764FF161F24449300C42DC8 /* API_Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API_Service.swift; sourceTree = "<group>"; };
+		E764FF191F245EDA00C42DC8 /* Adapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Adapter.swift; sourceTree = "<group>"; };
 		E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedTableViewController.swift; sourceTree = "<group>"; };
 		E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedCell.swift; sourceTree = "<group>"; };
 		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +56,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35BB60281F2450F400824B2B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35BB60291F2451BF00824B2B /* ProfileVC.swift */,
+				3536A4881F2469530080A4F7 /* BabyProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		0F9BB0B9C3020CD1B013B7D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -66,15 +79,6 @@
 				352D8E881F2441B6002AAF61 /* Entities.swift */,
 			);
 			path = Entities;
-			sourceTree = "<group>";
-		};
-		35BB60281F2450F400824B2B /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				35BB60291F2451BF00824B2B /* ProfileVC.swift */,
-				3536A4881F2469530080A4F7 /* BabyProfileVC.swift */,
-			);
-			path = Profile;
 			sourceTree = "<group>";
 		};
 		7B612E5AF04A244DE9FF1059 /* Pods */ = {
@@ -108,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				35BB60281F2450F400824B2B /* Profile */,
+				E764FF181F245EB900C42DC8 /* Adapter */,
+				E764FF151F24443500C42DC8 /* API */,
 				352D8E871F2441B6002AAF61 /* Entities */,
 				E7AC197F1F2333580094DCBA /* ExcerciseFeed */,
 				E7444B711F13FAD500918677 /* AppDelegate.swift */,
@@ -118,6 +124,22 @@
 				E7444B7D1F13FAD500918677 /* Info.plist */,
 			);
 			path = MamaDigital;
+			sourceTree = "<group>";
+		};
+		E764FF151F24443500C42DC8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E764FF161F24449300C42DC8 /* API_Service.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E764FF181F245EB900C42DC8 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				E764FF191F245EDA00C42DC8 /* Adapter.swift */,
+			);
+			path = Adapter;
 			sourceTree = "<group>";
 		};
 		E7AC197F1F2333580094DCBA /* ExcerciseFeed */ = {
@@ -256,11 +278,13 @@
 			files = (
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
 				35BB602A1F2451BF00824B2B /* ProfileVC.swift in Sources */,
+				E764FF1A1F245EDA00C42DC8 /* Adapter.swift in Sources */,
 				E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
-				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
 				3536A4891F2469530080A4F7 /* BabyProfileVC.swift in Sources */,
+				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
 				352D8E891F2441B6002AAF61 /* Entities.swift in Sources */,
+				E764FF171F24449300C42DC8 /* API_Service.swift in Sources */,
 				E708C35B1F23FAD0009AFC15 /* WorkoutDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
