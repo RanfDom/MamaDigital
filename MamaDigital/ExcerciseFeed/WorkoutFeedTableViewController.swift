@@ -28,12 +28,6 @@ class WorkoutFeedTableViewController : UITableViewController{
 //        }) { (error) in
 //            print(error ?? 0)
 //        }
-        
-        API_Service.requestBabyInfo(onSuccess: { (baby) in
-            print(baby)
-        }) { (error) in
-            print(error ?? 0)
-        }
     }
 
     
