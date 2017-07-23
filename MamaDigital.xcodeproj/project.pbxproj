@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35F5BA981F23DC2D00BC65AB /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F5BA971F23DC2D00BC65AB /* ProfileView.swift */; };
+		35F5BA9A1F23DC3600BC65AB /* ProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35F5BA991F23DC3600BC65AB /* ProfileView.xib */; };
+		35F5BAA01F23E9ED00BC65AB /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F5BA9F1F23E9ED00BC65AB /* Entities.swift */; };
 		6ED2DAB8A035C46DA3A61A3A /* Pods_MamaDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */; };
 		E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B711F13FAD500918677 /* AppDelegate.swift */; };
 		E7444B741F13FAD500918677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B731F13FAD500918677 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
+		35F5BA971F23DC2D00BC65AB /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		35F5BA991F23DC3600BC65AB /* ProfileView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileView.xib; sourceTree = "<group>"; };
+		35F5BA9F1F23E9ED00BC65AB /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
 		905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.debug.xcconfig"; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7444B711F13FAD500918677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +56,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		35F5BA961F23DC0B00BC65AB /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				35F5BA971F23DC2D00BC65AB /* ProfileView.swift */,
+				35F5BA991F23DC3600BC65AB /* ProfileView.xib */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		35F5BA9E1F23E9D600BC65AB /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				35F5BA9F1F23E9ED00BC65AB /* Entities.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		7B612E5AF04A244DE9FF1059 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +103,8 @@
 		E7444B701F13FAD500918677 /* MamaDigital */ = {
 			isa = PBXGroup;
 			children = (
+				35F5BA9E1F23E9D600BC65AB /* Entities */,
+				35F5BA961F23DC0B00BC65AB /* ProfileView */,
 				E7AC197F1F2333580094DCBA /* ExcerciseFeed */,
 				E7444B711F13FAD500918677 /* AppDelegate.swift */,
 				E7444B731F13FAD500918677 /* ViewController.swift */,
@@ -162,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F5BA9A1F23DC3600BC65AB /* ProfileView.xib in Resources */,
 				E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */,
 				E7444B791F13FAD500918677 /* Assets.xcassets in Resources */,
 				E7444B771F13FAD500918677 /* Main.storyboard in Resources */,
@@ -223,8 +249,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F5BA981F23DC2D00BC65AB /* ProfileView.swift in Sources */,
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
 				E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */,
+				35F5BAA01F23E9ED00BC65AB /* Entities.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
