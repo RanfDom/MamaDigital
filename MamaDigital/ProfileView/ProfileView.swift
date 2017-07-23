@@ -25,6 +25,7 @@ class ProfileView: UIView {
         myBaby = user?.baby
         userNameLabel.text = user?.name
         babyNameLabel.text = myBaby?.name
+        initialViewConfig()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -32,6 +33,10 @@ class ProfileView: UIView {
     }
     
     private func initialViewConfig() {
-       
+        profileImage.layer.cornerRadius = profileImage.frame.width/2
+        babyButton.layer.cornerRadius = babyButton.frame.width/2
+    }
+    
+    @IBAction func goToBabyInfo(_ sender: UIButton) {
     }
 }

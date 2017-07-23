@@ -55,6 +55,9 @@
                             <rect key="frame" x="8" y="8" width="85" height="85"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button" image="bebe_avatar"/>
+                            <connections>
+                                <action selector="goToBabyInfo:" destination="-1" eventType="touchUpInside" id="9Oy-Uq-Kr2"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="{Bebé}" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6R7-pb-pa0">
                             <rect key="frame" x="8" y="93" width="80" height="18"/>
