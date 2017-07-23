@@ -20,7 +20,6 @@ class Adapter {
         var myWorkout = [Workout]()
         
         for obj in data["works"] as! [AnyObject] {
-            print(obj)
             myWorkout.append(Workout(
                 title: obj["title"] as! String,
                 slug: "",
@@ -29,11 +28,9 @@ class Adapter {
                 description: obj["description"]as! String,
                 duration: "\(obj["duration"]as! Int)",
                 type: obj["type"]as! String))
-            
         }
         
         return myWorkout
-        
     }
     
     class func buildLink(_ end : String) -> String {
