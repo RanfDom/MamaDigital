@@ -13,7 +13,9 @@ class Adapter {
     class func babyFromService(_ data: [String:AnyObject]) -> Baby {
         return Baby(
             name: data["name"] as! String,
-            age:  "\(data["diffInMonths"] as! Int) meses")
+            age:  "\(data["diffInMonths"] as! Int) meses",
+            height: "\(data["heigth"] as! String)",
+            weight: "\(data["weigth"] as! String)")
     }
     
     class func workoutFromService(_ data: [String:AnyObject]) -> [Workout] {

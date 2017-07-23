@@ -18,7 +18,10 @@ class RoutineDetailVC: UITableViewController {
         
         let titleController = UIImageView()
         titleController.image = #imageLiteral(resourceName: "logo")
-        titleController.frame = CGRect(x: 0, y: 0, width: 110, height: 25)
+        titleController.frame = CGRect(x: 0, y: 0, width: 90, height: 25)
+        
+        self.navigationItem.hidesBackButton = true
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self as? UIGestureRecognizerDelegate
         
         self.navigationItem.titleView = titleController
     }
@@ -35,7 +38,7 @@ extension RoutineDetailVC{
         if section == 0{
             return 0
         }else if section == 1{
-            return 2
+            return 1 //2
         }else{
             return stepsArray.count
         }
@@ -72,7 +75,7 @@ extension RoutineDetailVC{
         if indexPath.section == 0{
             return 150
         }else if indexPath.section == 1{
-            return 138
+            return 168
         }else{
             return 95
         }
@@ -88,7 +91,7 @@ extension RoutineDetailVC{
         
         if section == 0{
             let headerView = HeaderTableView()
-            headerView.setImage(urlImage: (workout?.img_URL)!)
+            headerView.setImage(urlImage: (workout?.img_URL)!, title: workout.title)
             headerView.delegate = self
             return headerView
         }else if section == 1{

@@ -13,6 +13,8 @@ class BabyProfileVC: UIViewController {
     @IBOutlet weak var babyImage: UIImageView!
     @IBOutlet weak var babyNameLabel: UILabel!
     @IBOutlet weak var babyAgeLabe: UILabel!
+    @IBOutlet weak var babyWeightLabel: UILabel!
+    @IBOutlet weak var babyHeightLabel: UILabel!
     
     
     var babyData:Baby?
@@ -28,6 +30,8 @@ class BabyProfileVC: UIViewController {
         babyImage.clipsToBounds = true
         babyNameLabel.text = babyData?.name
         babyAgeLabe.text = babyData?.age
+        babyWeightLabel.text = babyData?.weight
+        babyHeightLabel.text = babyData?.height
     }
 
     func goBack() {

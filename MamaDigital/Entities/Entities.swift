@@ -11,6 +11,8 @@ import Foundation
 struct Baby {
     var name: String
     var age: String
+    var height: String
+    var weight: String
 }
 
 struct User {

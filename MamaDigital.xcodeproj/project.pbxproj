@@ -256,7 +256,7 @@
 				TargetAttributes = {
 					E7444B6D1F13FAD500918677 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = T9APG36RLZ;
+						DevelopmentTeam = 5VBZPT5YPP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -486,10 +486,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T9APG36RLZ;
+				DEVELOPMENT_TEAM = 5VBZPT5YPP;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lovelynk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Lovelynk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
@@ -502,10 +502,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = T9APG36RLZ;
+				DEVELOPMENT_TEAM = 5VBZPT5YPP;
 				INFOPLIST_FILE = MamaDigital/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.Lovelynk;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ds.Lovelynk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
