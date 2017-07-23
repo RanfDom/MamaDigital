@@ -10,6 +10,13 @@
 		352D8E891F2441B6002AAF61 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D8E881F2441B6002AAF61 /* Entities.swift */; };
 		3536A4891F2469530080A4F7 /* BabyProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3536A4881F2469530080A4F7 /* BabyProfileVC.swift */; };
 		35BB602A1F2451BF00824B2B /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35BB60291F2451BF00824B2B /* ProfileVC.swift */; };
+		35D5186B1F249A94001CB4E9 /* DescriptionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D518611F249A94001CB4E9 /* DescriptionViewCell.swift */; };
+		35D5186C1F249A94001CB4E9 /* EquipmentCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D518631F249A94001CB4E9 /* EquipmentCollectionCell.swift */; };
+		35D5186D1F249A94001CB4E9 /* EquipmentViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D518641F249A94001CB4E9 /* EquipmentViewCell.swift */; };
+		35D5186E1F249A94001CB4E9 /* HeaderTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D518661F249A94001CB4E9 /* HeaderTableView.swift */; };
+		35D5186F1F249A94001CB4E9 /* HeaderTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35D518671F249A94001CB4E9 /* HeaderTableView.xib */; };
+		35D518701F249A94001CB4E9 /* RoutineDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D518681F249A94001CB4E9 /* RoutineDetailVC.swift */; };
+		35D518711F249A94001CB4E9 /* StepsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D5186A1F249A94001CB4E9 /* StepsViewCell.swift */; };
 		6ED2DAB8A035C46DA3A61A3A /* Pods_MamaDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */; };
 		E708C35B1F23FAD0009AFC15 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */; };
 		E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B711F13FAD500918677 /* AppDelegate.swift */; };
@@ -24,10 +31,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3536A4881F2469530080A4F7 /* BabyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyProfileVC.swift; sourceTree = "<group>"; };
-		35BB60291F2451BF00824B2B /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
 		352D8E881F2441B6002AAF61 /* Entities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		3536A4881F2469530080A4F7 /* BabyProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabyProfileVC.swift; sourceTree = "<group>"; };
+		35BB60291F2451BF00824B2B /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		35D518611F249A94001CB4E9 /* DescriptionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewCell.swift; sourceTree = "<group>"; };
+		35D518631F249A94001CB4E9 /* EquipmentCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentCollectionCell.swift; sourceTree = "<group>"; };
+		35D518641F249A94001CB4E9 /* EquipmentViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EquipmentViewCell.swift; sourceTree = "<group>"; };
+		35D518661F249A94001CB4E9 /* HeaderTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderTableView.swift; sourceTree = "<group>"; };
+		35D518671F249A94001CB4E9 /* HeaderTableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderTableView.xib; sourceTree = "<group>"; };
+		35D518681F249A94001CB4E9 /* RoutineDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutineDetailVC.swift; sourceTree = "<group>"; };
+		35D5186A1F249A94001CB4E9 /* StepsViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StepsViewCell.swift; sourceTree = "<group>"; };
 		905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.debug.xcconfig"; sourceTree = "<group>"; };
 		E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,15 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		35BB60281F2450F400824B2B /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				35BB60291F2451BF00824B2B /* ProfileVC.swift */,
-				3536A4881F2469530080A4F7 /* BabyProfileVC.swift */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		0F9BB0B9C3020CD1B013B7D7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +84,61 @@
 				352D8E881F2441B6002AAF61 /* Entities.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		35BB60281F2450F400824B2B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				35BB60291F2451BF00824B2B /* ProfileVC.swift */,
+				3536A4881F2469530080A4F7 /* BabyProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		35D5185F1F249A94001CB4E9 /* RoutineDetailVC */ = {
+			isa = PBXGroup;
+			children = (
+				35D518601F249A94001CB4E9 /* DescriptionViewCell */,
+				35D518621F249A94001CB4E9 /* EquipmentViewCell */,
+				35D518651F249A94001CB4E9 /* HeaderView */,
+				35D518681F249A94001CB4E9 /* RoutineDetailVC.swift */,
+				35D518691F249A94001CB4E9 /* StepsViewCell */,
+			);
+			path = RoutineDetailVC;
+			sourceTree = "<group>";
+		};
+		35D518601F249A94001CB4E9 /* DescriptionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D518611F249A94001CB4E9 /* DescriptionViewCell.swift */,
+			);
+			path = DescriptionViewCell;
+			sourceTree = "<group>";
+		};
+		35D518621F249A94001CB4E9 /* EquipmentViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D518631F249A94001CB4E9 /* EquipmentCollectionCell.swift */,
+				35D518641F249A94001CB4E9 /* EquipmentViewCell.swift */,
+			);
+			path = EquipmentViewCell;
+			sourceTree = "<group>";
+		};
+		35D518651F249A94001CB4E9 /* HeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				35D518661F249A94001CB4E9 /* HeaderTableView.swift */,
+				35D518671F249A94001CB4E9 /* HeaderTableView.xib */,
+			);
+			path = HeaderView;
+			sourceTree = "<group>";
+		};
+		35D518691F249A94001CB4E9 /* StepsViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				35D5186A1F249A94001CB4E9 /* StepsViewCell.swift */,
+			);
+			path = StepsViewCell;
 			sourceTree = "<group>";
 		};
 		7B612E5AF04A244DE9FF1059 /* Pods */ = {
@@ -111,6 +171,7 @@
 		E7444B701F13FAD500918677 /* MamaDigital */ = {
 			isa = PBXGroup;
 			children = (
+				35D5185F1F249A94001CB4E9 /* RoutineDetailVC */,
 				35BB60281F2450F400824B2B /* Profile */,
 				E764FF181F245EB900C42DC8 /* Adapter */,
 				E764FF151F24443500C42DC8 /* API */,
@@ -215,6 +276,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D5186F1F249A94001CB4E9 /* HeaderTableView.xib in Resources */,
 				E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */,
 				E7444B791F13FAD500918677 /* Assets.xcassets in Resources */,
 				E7444B771F13FAD500918677 /* Main.storyboard in Resources */,
@@ -276,15 +338,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D5186C1F249A94001CB4E9 /* EquipmentCollectionCell.swift in Sources */,
+				35D5186D1F249A94001CB4E9 /* EquipmentViewCell.swift in Sources */,
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
 				35BB602A1F2451BF00824B2B /* ProfileVC.swift in Sources */,
+				35D5186E1F249A94001CB4E9 /* HeaderTableView.swift in Sources */,
 				E764FF1A1F245EDA00C42DC8 /* Adapter.swift in Sources */,
 				E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */,
+				35D5186B1F249A94001CB4E9 /* DescriptionViewCell.swift in Sources */,
+				35D518711F249A94001CB4E9 /* StepsViewCell.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
 				3536A4891F2469530080A4F7 /* BabyProfileVC.swift in Sources */,
 				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
 				352D8E891F2441B6002AAF61 /* Entities.swift in Sources */,
 				E764FF171F24449300C42DC8 /* API_Service.swift in Sources */,
+				35D518701F249A94001CB4E9 /* RoutineDetailVC.swift in Sources */,
 				E708C35B1F23FAD0009AFC15 /* WorkoutDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
