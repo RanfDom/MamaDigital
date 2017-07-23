@@ -11,6 +11,11 @@ import UIKit
 class BabyProfileVC: UIViewController {
 
     @IBOutlet weak var babyImage: UIImageView!
+    @IBOutlet weak var babyNameLabel: UILabel!
+    @IBOutlet weak var babyAgeLabe: UILabel!
+    
+    
+    var babyData:Baby?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +26,8 @@ class BabyProfileVC: UIViewController {
         view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(goBack)))
         babyImage.layer.cornerRadius = babyImage.frame.width/2
         babyImage.clipsToBounds = true
+        babyNameLabel.text = babyData?.name
+        babyAgeLabe.text = babyData?.age
     }
 
     func goBack() {
