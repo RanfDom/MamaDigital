@@ -89,6 +89,7 @@ extension RoutineDetailVC{
         if section == 0{
             let headerView = HeaderTableView()
             headerView.setImage(urlImage: (workout?.img_URL)!)
+            headerView.delegate = self
             return headerView
         }else if section == 1{
             headerDesLabel.text = ""
@@ -108,5 +109,15 @@ extension RoutineDetailVC{
         }else{
             return 30
         }
+    }
+}
+
+extension RoutineDetailVC : HeaderViewProtocol {
+    func playVideo() {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let playerVC = sb.instantiateViewController(withIdentifier: "PlayerVC") as! PlayerVC
+        playerVC.video_URL = workout.video_URL
+        
+        self.navigationController?.present(playerVC, animated: true, completion: nil)
     }
 }
