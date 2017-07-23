@@ -16,9 +16,30 @@ class Adapter {
             age:  "\(data["diffInMonths"] as! Int) meses")
     }
     
-//    API_Service.requestBabyInfo(onSuccess: { (baby) in
-//    print(baby)
-//    }) { (error) in
-//    print(error ?? 0)
-//    }
+    class func workoutFromService(_ data: [String:AnyObject]) -> [Workout] {
+        var myWorkout = [Workout]()
+        
+        for obj in data["works"] as! [AnyObject] {
+            print(obj)
+            myWorkout.append(Workout(
+                title: obj["title"] as! String,
+                slug: "",
+                video_URL: buildLink(obj["video"]as! String),
+                img_URL: buildLink(obj["thumbnail"]as! String),
+                description: obj["description"]as! String,
+                duration: "\(obj["duration"]as! Int)",
+                type: obj["type"]as! String))
+            
+        }
+        
+        return myWorkout
+        
+    }
+    
+    class func buildLink(_ end : String) -> String {
+        let index = end.index(end.startIndex, offsetBy: 1)
+        return "http://192.168.15.100/\(end.substring(from: index))"
+        
+    }
+    
 }
