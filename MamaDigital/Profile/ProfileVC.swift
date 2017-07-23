@@ -28,7 +28,7 @@ class ProfileVC: UIViewController {
     }
     
     func initialConfigView() {
-        baby = Baby(name: "Alfreo", age: "5 meces", height: "", weight: "")
+        baby = Baby(name: "Alfreo", age: "5 meces", height: "50 cm", weight: "3 kg")
         user = User(name: "Ranferi", email: "ranfo@hola.com", baby: baby)
         
         userNameLabel.text = user.name
