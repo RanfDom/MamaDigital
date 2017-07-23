@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		6ED2DAB8A035C46DA3A61A3A /* Pods_MamaDigital.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */; };
+		E708C35B1F23FAD0009AFC15 /* WorkoutDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */; };
 		E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B711F13FAD500918677 /* AppDelegate.swift */; };
 		E7444B741F13FAD500918677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7444B731F13FAD500918677 /* ViewController.swift */; };
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
 		E7444B791F13FAD500918677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7444B781F13FAD500918677 /* Assets.xcassets */; };
 		E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B7A1F13FAD500918677 /* LaunchScreen.storyboard */; };
-		E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */; };
+		E75223911F23E9B400FEFCAD /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75223901F23E9B400FEFCAD /* Workout.swift */; };
+		E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */; };
+		E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B6F95229AD7FD4C059026F5 /* Pods-MamaDigital.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.release.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.release.xcconfig"; sourceTree = "<group>"; };
 		905B34783A63B892E8AC054F /* Pods-MamaDigital.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MamaDigital.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MamaDigital/Pods-MamaDigital.debug.xcconfig"; sourceTree = "<group>"; };
+		E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutDetailViewController.swift; sourceTree = "<group>"; };
 		E7444B6E1F13FAD500918677 /* MamaDigital.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MamaDigital.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7444B711F13FAD500918677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E7444B731F13FAD500918677 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -26,7 +30,9 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExcerciseFeedVC.swift; sourceTree = "<group>"; };
+		E75223901F23E9B400FEFCAD /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
+		E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedTableViewController.swift; sourceTree = "<group>"; };
+		E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedCell.swift; sourceTree = "<group>"; };
 		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -94,7 +100,10 @@
 		E7AC197F1F2333580094DCBA /* ExcerciseFeed */ = {
 			isa = PBXGroup;
 			children = (
-				E7AC19801F23336A0094DCBA /* ExcerciseFeedVC.swift */,
+				E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */,
+				E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */,
+				E75223901F23E9B400FEFCAD /* Workout.swift */,
+				E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */,
 			);
 			path = ExcerciseFeed;
 			sourceTree = "<group>";
@@ -224,8 +233,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
-				E7AC19811F23336A0094DCBA /* ExcerciseFeedVC.swift in Sources */,
+				E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
+				E75223911F23E9B400FEFCAD /* Workout.swift in Sources */,
+				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
+				E708C35B1F23FAD0009AFC15 /* WorkoutDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
