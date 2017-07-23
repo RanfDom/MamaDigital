@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -153,6 +154,7 @@
                                 <connections>
                                     <outlet property="backGroundImage" destination="Kxu-te-gqK" id="hdF-OX-OSi"/>
                                     <outlet property="title" destination="f1e-ij-ssQ" id="xRA-Eh-NRt"/>
+                                    <segue destination="LWq-Oo-6e5" kind="show" action="showDetailViewController:sender:" id="ZdP-Gb-RyY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -166,25 +168,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hsr-bA-GDV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1623.2" y="26.53673163418291"/>
-        </scene>
-        <!--Workout Detail View Controller-->
-        <scene sceneID="pFY-1l-yEE">
-            <objects>
-                <viewController storyboardIdentifier="workoutDetailIdentifier" id="yKG-ry-kuw" customClass="WorkoutDetailViewController" customModule="MamaDigital" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="cQU-Wh-1AG"/>
-                        <viewControllerLayoutGuide type="bottom" id="TnI-Fk-Lgs"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="M2Z-TB-iHq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.96634277065154062" green="1" blue="0.0053168375960275238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kDf-N0-Dbq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RRa-Lk-Wwn" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2600.8000000000002" y="26.53673163418291"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="d1C-wA-1kj">
@@ -223,9 +206,172 @@
             </objects>
             <point key="canvasLocation" x="684" y="26.53673163418291"/>
         </scene>
+        <!--Practica diaria-->
+        <scene sceneID="NaF-3B-BQI">
+            <objects>
+                <tableViewController id="LWq-Oo-6e5" customClass="RoutineDetailVC" customModule="MamaDigital" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="135" sectionHeaderHeight="28" sectionFooterHeight="28" id="4eL-fz-JMI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionViewCellID" rowHeight="150" id="Y6z-8U-BRg" customClass="DescriptionViewCell" customModule="MamaDigital" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="150"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Y6z-8U-BRg" id="Uxm-aB-mXy">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dbv-1c-XrF">
+                                            <rect key="frame" x="0.0" y="41" width="375" height="108"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <string key="text">Tumbaremos al bebé y levantaremos el brazo sobre el que se va a girar, después de haberlo practicado varias veces con un juguete podremos estimularle para que sea él solito quien voltee para coger el juguete</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Descripción" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGd-Go-JFl">
+                                            <rect key="frame" x="8" y="13" width="359" height="26"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="19"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="dbv-1c-XrF" firstAttribute="top" secondItem="gGd-Go-JFl" secondAttribute="bottom" constant="2" id="2kP-Dj-Y6b"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="gGd-Go-JFl" secondAttribute="trailing" id="7qm-86-kY7"/>
+                                        <constraint firstItem="dbv-1c-XrF" firstAttribute="leading" secondItem="Uxm-aB-mXy" secondAttribute="leading" id="Bzd-iQ-U1z"/>
+                                        <constraint firstAttribute="bottom" secondItem="dbv-1c-XrF" secondAttribute="bottom" id="PIc-BI-SrJ"/>
+                                        <constraint firstItem="gGd-Go-JFl" firstAttribute="leading" secondItem="Uxm-aB-mXy" secondAttribute="leadingMargin" id="RAX-tx-6cZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="dbv-1c-XrF" secondAttribute="trailing" id="roG-Sz-6xS"/>
+                                        <constraint firstItem="gGd-Go-JFl" firstAttribute="top" secondItem="Uxm-aB-mXy" secondAttribute="topMargin" constant="5" id="rsh-RB-nyy"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descTextView" destination="dbv-1c-XrF" id="5FK-Q1-d8j"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="EquipmentViewCellID" rowHeight="135" id="9iH-N7-gRB" customClass="EquipmentViewCell" customModule="MamaDigital" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="178" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9iH-N7-gRB" id="hJM-rV-Oa5">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="135"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="f0D-Cb-3h9">
+                                            <rect key="frame" x="0.0" y="39" width="375" height="96"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="5" id="sWp-ME-g9I">
+                                                <size key="itemSize" width="50" height="50"/>
+                                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                            </collectionViewFlowLayout>
+                                            <cells>
+                                                <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EquipmentCollectionCellID" id="C9u-W9-frN" customClass="EquipmentCollectionCell" customModule="MamaDigital" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="23" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <subviews>
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eq1" translatesAutoresizingMaskIntoConstraints="NO" id="8eN-RY-c6Z">
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </view>
+                                                    <constraints>
+                                                        <constraint firstItem="8eN-RY-c6Z" firstAttribute="top" secondItem="C9u-W9-frN" secondAttribute="top" id="crI-Ti-fbv"/>
+                                                        <constraint firstAttribute="trailing" secondItem="8eN-RY-c6Z" secondAttribute="trailing" id="eMp-qN-8zw"/>
+                                                        <constraint firstItem="8eN-RY-c6Z" firstAttribute="leading" secondItem="C9u-W9-frN" secondAttribute="leading" id="f34-fG-RO3"/>
+                                                        <constraint firstAttribute="bottom" secondItem="8eN-RY-c6Z" secondAttribute="bottom" id="jLp-Ay-YII"/>
+                                                    </constraints>
+                                                    <connections>
+                                                        <outlet property="eqImage" destination="8eN-RY-c6Z" id="jlx-Y0-W1y"/>
+                                                    </connections>
+                                                </collectionViewCell>
+                                            </cells>
+                                        </collectionView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equipamento bebé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uca-9w-Sbx">
+                                            <rect key="frame" x="6" y="14" width="369" height="25"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="18"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="f0D-Cb-3h9" secondAttribute="bottom" id="3do-vF-aN1"/>
+                                        <constraint firstItem="uca-9w-Sbx" firstAttribute="top" secondItem="hJM-rV-Oa5" secondAttribute="top" constant="14" id="D3g-o5-gJ1"/>
+                                        <constraint firstItem="f0D-Cb-3h9" firstAttribute="leading" secondItem="hJM-rV-Oa5" secondAttribute="leading" id="IcT-n8-vM1"/>
+                                        <constraint firstItem="uca-9w-Sbx" firstAttribute="leading" secondItem="hJM-rV-Oa5" secondAttribute="leading" constant="6" id="WY2-GR-gKa"/>
+                                        <constraint firstItem="f0D-Cb-3h9" firstAttribute="top" secondItem="uca-9w-Sbx" secondAttribute="bottom" id="aoa-ih-BtB"/>
+                                        <constraint firstItem="f0D-Cb-3h9" firstAttribute="top" secondItem="uca-9w-Sbx" secondAttribute="bottom" id="mri-9u-bOU"/>
+                                        <constraint firstAttribute="trailing" secondItem="uca-9w-Sbx" secondAttribute="trailing" id="t8A-I4-LXN"/>
+                                        <constraint firstAttribute="trailing" secondItem="f0D-Cb-3h9" secondAttribute="trailing" id="vJc-sN-FeL"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="equipmnetCollectionView" destination="f0D-Cb-3h9" id="Ygg-bP-RY8"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StepsViewCellID" rowHeight="96" id="Xge-iQ-ODb" customClass="StepsViewCell" customModule="MamaDigital" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="313" width="375" height="96"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xge-iQ-ODb" id="Idm-nF-qre">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="96"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rebota al bebé" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4Q-i2-8iQ">
+                                            <rect key="frame" x="104" y="13" width="263" height="74.5"/>
+                                            <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K6z-mx-b3Q">
+                                            <rect key="frame" x="0.0" y="5" width="87" height="91"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="87" id="QMQ-ax-XNZ"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="87" id="yl5-Nx-lux"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="K6z-mx-b3Q" secondAttribute="bottom" id="2WA-4q-4zr"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="trailing" secondItem="Idm-nF-qre" secondAttribute="trailingMargin" id="741-GZ-grn"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="h4Q-i2-8iQ" secondAttribute="trailing" id="9tC-8S-9rb"/>
+                                        <constraint firstItem="K6z-mx-b3Q" firstAttribute="leading" secondItem="Idm-nF-qre" secondAttribute="leading" id="Bg6-aX-dIa"/>
+                                        <constraint firstItem="K6z-mx-b3Q" firstAttribute="top" secondItem="Idm-nF-qre" secondAttribute="top" constant="5" id="EYh-Cc-A4u"/>
+                                        <constraint firstItem="K6z-mx-b3Q" firstAttribute="top" secondItem="Idm-nF-qre" secondAttribute="top" constant="5" id="F1Q-cj-xwu"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="top" secondItem="Idm-nF-qre" secondAttribute="topMargin" constant="5" id="Fyg-pv-pCX"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="bottom" secondItem="Idm-nF-qre" secondAttribute="bottomMargin" id="Tvy-ly-VMq"/>
+                                        <constraint firstItem="K6z-mx-b3Q" firstAttribute="leading" secondItem="Idm-nF-qre" secondAttribute="leading" id="VAt-il-psR"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="h4Q-i2-8iQ" secondAttribute="bottom" id="i7s-Da-oSd"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="leading" secondItem="K6z-mx-b3Q" secondAttribute="trailing" constant="17" id="jWB-Gt-k6g"/>
+                                        <constraint firstAttribute="bottom" secondItem="K6z-mx-b3Q" secondAttribute="bottom" id="rW7-Lb-sfN"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="leading" secondItem="K6z-mx-b3Q" secondAttribute="trailing" constant="17" id="xVE-cq-Dfp"/>
+                                        <constraint firstItem="h4Q-i2-8iQ" firstAttribute="top" secondItem="Idm-nF-qre" secondAttribute="topMargin" constant="5" id="zXj-JP-Q1j"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labelStep" destination="h4Q-i2-8iQ" id="Hc0-Jb-8nN"/>
+                                    <outlet property="stepImage" destination="K6z-mx-b3Q" id="j0G-BI-PKn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="LWq-Oo-6e5" id="Rsj-Br-oCK"/>
+                            <outlet property="delegate" destination="LWq-Oo-6e5" id="2tv-Q6-t7v"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Practica diaria" id="PTB-Ti-6L1"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bE0-3P-rjZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2494" y="27"/>
+        </scene>
     </scenes>
     <resources>
         <image name="avatar_placeholder" width="180" height="180"/>
         <image name="bebe_avatar" width="150" height="150"/>
+        <image name="eq1" width="16" height="16"/>
     </resources>
 </document>
