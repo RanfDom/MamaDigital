@@ -32,6 +32,7 @@ class ProfileView: UIView {
     }
     
     private func initialViewConfig() {
-       
+       profileImage.layer.cornerRadius = profileImage.frame.width/2
+        babyButton.layer.cornerRadius = babyButton.frame.width/2
     }
 }

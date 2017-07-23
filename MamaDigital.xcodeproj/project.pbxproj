@@ -17,7 +17,6 @@
 		E7444B771F13FAD500918677 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B751F13FAD500918677 /* Main.storyboard */; };
 		E7444B791F13FAD500918677 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7444B781F13FAD500918677 /* Assets.xcassets */; };
 		E7444B7C1F13FAD500918677 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7444B7A1F13FAD500918677 /* LaunchScreen.storyboard */; };
-		E75223911F23E9B400FEFCAD /* Workout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75223901F23E9B400FEFCAD /* Workout.swift */; };
 		E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */; };
 		E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +35,6 @@
 		E7444B781F13FAD500918677 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7444B7B1F13FAD500918677 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E7444B7D1F13FAD500918677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E75223901F23E9B400FEFCAD /* Workout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Workout.swift; sourceTree = "<group>"; };
 		E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedTableViewController.swift; sourceTree = "<group>"; };
 		E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkoutFeedCell.swift; sourceTree = "<group>"; };
 		ED208C6DDE9149308A4EB6F5 /* Pods_MamaDigital.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MamaDigital.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -127,7 +125,6 @@
 			children = (
 				E7AC19801F23336A0094DCBA /* WorkoutFeedTableViewController.swift */,
 				E7AC19861F23DF0D0094DCBA /* WorkoutFeedCell.swift */,
-				E75223901F23E9B400FEFCAD /* Workout.swift */,
 				E708C35A1F23FAD0009AFC15 /* WorkoutDetailViewController.swift */,
 			);
 			path = ExcerciseFeed;
@@ -261,7 +258,6 @@
 				E7444B741F13FAD500918677 /* ViewController.swift in Sources */,
 				E7AC19811F23336A0094DCBA /* WorkoutFeedTableViewController.swift in Sources */,
 				E7444B721F13FAD500918677 /* AppDelegate.swift in Sources */,
-				E75223911F23E9B400FEFCAD /* Workout.swift in Sources */,
 				E7AC19871F23DF0D0094DCBA /* WorkoutFeedCell.swift in Sources */,
 				352D8E841F24413E002AAF61 /* ProfileView.swift in Sources */,
 				352D8E891F2441B6002AAF61 /* Entities.swift in Sources */,
